@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package app1;
+
+/**
+ * 
+ */
+public class TestPoint {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	
+		Point p1 = new Point(14.0, -14.5);
+	    Point p2 = new Point(14.0, -14.5);
+		
+	    ///Point ppPoint =  p1.milieu(p1,p2);
+		
+	}
+
+}

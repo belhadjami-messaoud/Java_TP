@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+package app3;
+
+/**
+ * 
+ */
+public class R4 implements automobile {
+
+}

@@ -1,0 +1,11 @@
+package app4;
+
+public enum Days {
+SAM,
+DIM,
+LUN,
+MAR,
+MER,
+JEU,
+VEN
+}

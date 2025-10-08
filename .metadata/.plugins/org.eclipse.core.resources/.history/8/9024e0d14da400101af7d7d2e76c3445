@@ -1,0 +1,15 @@
+package courEnum;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Days jourDebutFormationDays = Days.DIM;
+		Days jourFintFormationDays = Days.JEU;
+		
+		System.out.println(jourDebutFormationDays.getNomJour());
+		System.out.println(jourFintFormationDays.getNomJour());
+		System.out.println(jourFintFormationDays);
+	}
+
+}

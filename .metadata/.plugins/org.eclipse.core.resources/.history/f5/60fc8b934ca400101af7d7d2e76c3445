@@ -1,0 +1,7 @@
+package app4;
+
+public class test {
+
+	Days jourDebutFormationDays = Days.DIM;
+	Days jourFintFormationDays = Days.DIM;
+}

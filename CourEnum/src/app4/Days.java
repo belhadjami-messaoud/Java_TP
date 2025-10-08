@@ -1,0 +1,32 @@
+package app4;
+
+public enum Days {
+	
+LUN(2,"Lundi"),
+MAR(3,"Mardi"),
+MER(4,"Mercredi"),
+JEU(5,"Jeudi"),
+VEN(6,"Vendreder"),
+SAM(7,"Samder"),
+DIM(1,"Dimanche");
+	
+private int NJAgeria;
+private String nomJour;
+
+
+public int getNJAgeria() {
+	return NJAgeria;
+}
+
+
+public String getNomJour() {
+	return nomJour;
+}
+
+
+Days(int NJ,String nomJour) {
+	this.NJAgeria=NJ;
+	this.nomJour=nomJour;
+}
+
+}

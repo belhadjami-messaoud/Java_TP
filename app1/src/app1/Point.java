@@ -1,0 +1,98 @@
+/**
+ * 
+ */
+package app1;
+
+/**
+ * 
+ */
+public class Point {
+	
+	protected Double x;
+	protected Double y ;
+	
+	public Point() {
+		this.x = 0.0;
+		this.y = 0.0;
+	}
+	public Point(Double x, Double y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	public Point(Double x) {
+		this.x = x;
+		this.y= x;
+	}
+	
+	public void translate(Double dx,Double dy) {
+		this.x= this.x + dx;
+		this.y= this.y + dy;
+		
+	}
+	
+	public void affiche() {
+		System.out.println("(" + this.x+"," + this.y+")");
+	}	
+	
+	
+	public static Double distance(Point p1,Point p2) {
+	
+		return Math.sqrt(Math.pow(p2.x-p1.x, 2)+Math.pow(p2.y-p1.y, 2));
+	}
+	
+	
+	public Double distance(Point p1) {
+		return Math.sqrt(Math.pow(this.x-p1.x, 2)+Math.pow(this.y-p1.y, 2));
+	}
+	
+	
+	public Point milieu(Point p1,Point p2) {
+		return new Point((p2.x+p1.x)/2,(p2.x+p1.x)/2);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((x == null) ? 0 : x.hashCode());
+		result = prime * result + ((y == null) ? 0 : y.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Point other = (Point) obj;
+		if (x == null) {
+			if (other.x != null)
+				return false;
+		} else if (!x.equals(other.x))
+			return false;
+		if (y == null) {
+			if (other.y != null)
+				return false;
+		} else if (!y.equals(other.y))
+			return false;
+		return true;
+	}
+	
+	
+
+}

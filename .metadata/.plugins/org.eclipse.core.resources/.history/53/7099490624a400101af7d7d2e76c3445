@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package app1;
+
+/**
+ * 
+ */
+public class Point3D extends Point {
+private Double z;
+
+
+public Point3D() {
+	super();
+	z = 0.0;
+}
+
+public void affiche() {
+	System.out.println("(" + this.x+"," + this.y+")");
+}	
+}

@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+package app1;
+
+/**
+ * 
+ */
+public class Point {
+	
+	private Double x;
+	private Double y ;
+	
+	public Point() {
+		this.x = 0.0;
+		this.y = 0.0;
+	}
+	public Point(Double x, Double y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	public Point(Double x) {
+		this.x = x;
+	}
+	
+	public void translate(Double dx,Double dy) {
+		this.x= this.x + dx;
+		this.y= this.y + dy;
+		
+	}
+	
+	
+	
+	public static Double distance(Point p1,Point p2) {
+	
+		return Math.sqrt(Math.pow(p2.x-p1.x, 2)+Math.pow(p2.y-p1.y, 2));
+	}
+	
+	public Double distance(Point p1) {
+		return Math.sqrt(Math.pow(this.x-p1.x, 2)+Math.pow(this.y-p1.y, 2));
+	}
+	
+	public Point milieu(Point p1) {
+		return new Point((this.x+p1.x)/2,(this.x+p1.x)/2);
+	}
+	
+	
+
+}

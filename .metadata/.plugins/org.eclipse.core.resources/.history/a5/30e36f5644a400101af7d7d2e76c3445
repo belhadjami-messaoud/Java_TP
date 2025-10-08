@@ -1,0 +1,6 @@
+package app3;
+
+public interface automobile {
+	default void demarrer();
+	void arrater();
+}

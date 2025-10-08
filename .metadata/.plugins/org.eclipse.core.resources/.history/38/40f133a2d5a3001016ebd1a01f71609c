@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package app1;
+
+/**
+ * 
+ */
+public class TestPoint {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Point p1,p2,p3;
+		
+	}
+
+}

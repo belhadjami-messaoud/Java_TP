@@ -1,0 +1,5 @@
+package app4;
+
+public enum Days {
+
+}

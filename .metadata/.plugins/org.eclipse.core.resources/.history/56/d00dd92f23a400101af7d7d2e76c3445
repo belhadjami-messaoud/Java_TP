@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package app1;
+
+/**
+ * 
+ */
+public class Point3D {
+private Point point;
+private Double z;
+
+}

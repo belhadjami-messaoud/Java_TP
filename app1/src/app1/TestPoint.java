@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package app1;
+
+/**
+ * 
+ */
+public class TestPoint {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		Point p3;
+		Point p1 = new Point(14.0, -14.5);
+	    Point p2 = new Point(14.0, -14.5);
+	    p3=p2;
+	    System.out.println(p1==p2);
+	    System.out.println(p1==p2);
+	    System.out.println(p1.equals(p2));
+	    //Point ppPoint =  p1.milieu(p1,p2);
+	    */
+	    Point3D point3d1 = new Point3D(10.0);
+	    Point3D point3d2 = new Point3D(50.0);
+	    Point3D point3d3 = new Point3D(50.0,30.0,15.0);
+	    
+	    point3d1.affiche();
+	    point3d2.affiche();
+	    point3d1.milieu(point3d2).affiche();
+	    Point3D.milieu(point3d1,point3d3).affiche();
+	}
+
+}
