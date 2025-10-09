@@ -20,21 +20,21 @@ public Point3D(Double x) {
 	z = x;
 }
 
-public Point3D(Double x,Double y,Double z) {
+public Point3D(Double x,Double y,Double z)throws ErrorCorrdonneesNull {
 	super(x,y);
 	this.z = z;
 }
 
-public Point3D(Point3D p) {
+public Point3D(Point3D p) throws ErrorCorrdonneesNull{
 	super(p.x , p.y);
 	this.z = p.z;
 }
 
-public Point3D milieu(Point3D other) {
+public Point3D milieu(Point3D other) throws ErrorCorrdonneesNull {
 	return new Point3D((this.x + other.x)/2,(this.y + other.y)/2,(this.z + other.z)/2);
 }
 
-public static Point3D milieu(Point3D p1, Point3D p2) {
+public static Point3D milieu(Point3D p1, Point3D p2) throws ErrorCorrdonneesNull {
 	return new Point3D((p1.x + p2.x)/2,(p1.y + p2.y)/2,(p1.z + p2.z)/2);
 }
 

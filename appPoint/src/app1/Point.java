@@ -15,7 +15,8 @@ public class Point {
 		this.x = 0.0;
 		this.y = 0.0;
 	}
-	public Point(Double x, Double y) {
+	public Point(Double x, Double y) throws ErrorCorrdonneesNull {
+		if (x==null || y==null) throw new ErrorCorrdonneesNull("x,y null");
 		this.x = x;
 		this.y = y;
 	}
@@ -47,8 +48,12 @@ public class Point {
 	}
 	
 	
-	public Point milieu(Point p1,Point p2) {
+	public static Point milieu(Point p1,Point p2) throws ErrorCorrdonneesNull {
 		return new Point((p2.x+p1.x)/2,(p2.x+p1.x)/2);
+	}
+	
+	public  Point milieu(Point p1) throws ErrorCorrdonneesNull {
+		return new Point((this.x+p1.x)/2,(this.x+p1.x)/2);
 	}
 	
 	
