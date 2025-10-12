@@ -6,7 +6,6 @@ public class Rectangle {
 	private Point p1;
 	// le point du haut droite
 	private Point p2;
-	
 	private double largeur;
 	private double hauteur;
 	
@@ -62,7 +61,7 @@ public class Rectangle {
 		return this.getLargeur() == r.getLargeur() && this.getHauteur() == r.getHauteur();
 	}
 	
-	 public Rectangle hull(ArrayList<Rectangle> liste){
+	 public static Rectangle hull(ArrayList<Rectangle> liste){
 	        Rectangle res =null ;
 	        double x1=0.0 , y1=0.0 , x2=0.0 , y2=0.0 ;
 
