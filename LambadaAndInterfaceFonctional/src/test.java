@@ -37,6 +37,9 @@ public class test {
 		
 		//add a = new add();
 		//Multi m = new Multi();
+		 
+		//System.out.println(a.calc(tab));
+		//System.out.println( m.calc(tab));
 		
 		 operationlCalc a = new operationlCalc() {
 			
@@ -82,20 +85,31 @@ public class test {
 		}.calc(tab));
 		
 		
-        BiFunction<Integer, Integer, Long> addd = (aaa, bbb) -> (long) aaa + bbb;
+		operationlCalc op = (double[] t)-> {
+			double s = 1;
+			
+			for(double v: t) {
+				s*=v;
+			}
+			return s;
+		};
+		
+		System.out.println(op.calc(tab));
+		
+        BiFunction<Integer, Integer, Long> addd = (aa, bb) -> (long) aa + bb;
         System.out.println(addd.apply(10, 20)); // 30
         
 		
-		 BiFunction<Integer, Integer, Long> add = new BiFunction<Integer, Integer, Long>() {
+		BiFunction<Integer, Integer, Long> add = new BiFunction<Integer, Integer, Long>() {
 			@Override
 			public Long apply(Integer t, Integer u) {
-				return (long) t+u;
+				return (long) t + u;
 			}
 		};
+		
 		System.out.println(add.apply(10, 20));
 		
-		//System.out.println(a.calc(tab));
-		//System.out.println( m.calc(tab));
+		
 	}
 
 }
