@@ -9,7 +9,7 @@ public record Etudiant(String nom,String prenom,Double note1,Double note2) {
 		if(prenom == null || nom.trim().isEmpty()) 
 			throw new IllegalArgumentException("prenom non vide");
 		
-		if(note1 < 0.0 || note2> 20.0)
+		if(note1 < 0.0 || note1 > 20.0)
 			throw new IllegalArgumentException("prenom non vide");
 		
 		if(note2 < 0.0 || note2 > 20.0)

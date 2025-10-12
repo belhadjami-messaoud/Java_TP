@@ -10,10 +10,10 @@ public record Etudiant2(String nom,String prenom,double[] notes) {
 		if(prenom == null || nom.trim().isEmpty()) 
 			throw new IllegalArgumentException("prenom non vide");
 		
-		if(notes[1] < 0.0 || notes[1]> 20.0)
+		if(notes[1] < 0.0 || notes[1] > 20.0)
 			throw new IllegalArgumentException("prenom non vide");
 		
-		if(notes[0] < 0.0 || notes[1] > 20.0)
+		if(notes[0] < 0.0 || notes[0] > 20.0)
 			throw new IllegalArgumentException("prenom non vide");
 	}
 	
