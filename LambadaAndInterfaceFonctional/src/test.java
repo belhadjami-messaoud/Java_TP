@@ -67,6 +67,21 @@ public class test {
 		
 		
 		
+		System.out.println(new operationlCalc() {
+			
+			@Override
+			public double calc(double[] c) {
+				double s = 1;
+				
+				for(double v:c) {
+					s*=v;
+				}
+				return s;
+			}
+		}.calc(tab));
+		
+		
+		
 		System.out.println(a.calc(tab));
 		System.out.println( m.calc(tab));
 	}
