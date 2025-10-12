@@ -82,13 +82,14 @@ public class test {
 		}.calc(tab));
 		
 		
-        //BiFunction<Integer, Integer, Integer> add = (aa, ba) -> aa + ba;
-        //System.out.println(add.apply(10, 20)); // 30
+        BiFunction<Integer, Integer, Long> addd = (aaa, bbb) -> (long) aaa + bbb;
+        System.out.println(addd.apply(10, 20)); // 30
+        
 		
 		 BiFunction<Integer, Integer, Long> add = new BiFunction<Integer, Integer, Long>() {
 			@Override
 			public Long apply(Integer t, Integer u) {
-				return Long.valueOf(t+u);
+				return (long) t+u;
 			}
 		};
 		System.out.println(add.apply(10, 20));
