@@ -21,7 +21,7 @@ public class main {
 		
 		PrintStream ps = new PrintStream(nomFicherString);
 		
-		ps.append("eeeeeeeeeeeeeeeefzef");
+		ps.append("ننننننننننننننننن");
 		ps.close();
 		
 		
